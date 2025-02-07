@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurador de Móveis</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Configurar</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/800x600" alt="Produto" />
+            </div>
+            <div class="configurations">
+                <h2>Configurações</h2>
+                <div class="options">
+                    <h3>Acabamentos</h3>
+                    <ul>
+                        <li><input type="radio" name="acabamento" id="nogueira" checked> <label for="nogueira">Nogueira Natura</label></li>
+                        <li><input type="radio" name="acabamento" id="carvalho"> <label for="carvalho">Carvalho</label></li>
+                        <li><input type="radio" name="acabamento" id="laca"> <label for="laca">Laca</label></li>
+                    </ul>
+                </div>
+                <div class="options">
+                    <h3>Cores</h3>
+                    <ul>
+                        <li><input type="radio" name="cor" id="azul" checked> <label for="azul">Azul</label></li>
+                        <li><input type="radio" name="cor" id="vermelho"> <label for="vermelho">Vermelho</label></li>
+                        <li><input type="radio" name="cor" id="marrom"> <label for="marrom">Marrom</label></li>
+                        <li><input type="radio" name="cor" id="preto"> <label for="preto">Preto</label></li>
+                    </ul>
+                </div>
+                <div class="options">
+                    <h3>Medidas</h3>
+                    <ul>
+                        <li><input type="radio" name="medida" id="medida1" checked> <label for="medida1">2000x1000</label></li>
+                        <li><input type="radio" name="medida" id="medida2"> <label for="medida2">2200x1100</label></li>
+                    </ul>
+                </div>
+                <button onclick="personalizarMovel()">Aplicar Configurações</button>
+            </div>
+        </div>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
